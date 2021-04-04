@@ -17,5 +17,13 @@ if (count($result)>0){
 return $result[0];
 
 }
-
+return false;
 }
+function getAllcategories(){
+	
+	$query="select * from categories ";
+$result=get($query);
+	
+	return $result[0];
+}
+?>
